@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampEase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Penyewaan Peralatan Outdoor
+        CampEase
+    </h1>
+
+    <p><b>Tenda Camping</b></p>
+    <p>Harga sewa per hari: Rp 100000</p>
+
+    <p><b>Sleeping Bag</b></p>
+    <p>Harga sewa per hari: Rp 50000</p>
+
+    <p><b>Kompor Portable</b></p>
+    <p>Harga sewa per hari: Rp 75000</p>
+
+    <form id="penyewaanForm">
+    <h2>Form Penyewaan</h2>
+    <div id="alats">
+        <label for="pilihAlat">Pilih Alat</label>
+        <select name="pilihAlat" id="pilihAlat" required>
+            <option disabled selected hidden></option>
+            <option value="tenda">Tenda Camping - Rp100000/hari</option>
+            <option value="sleeping">Sleeping Bag - Rp50000/hari</option>
+            <option value="kompor">Kompor Portable - Rp75000/hari</option>
+        </select>
+    </div>
+    <br>
+    <div id="haris">
+        <label for="hari">Jumlah Hari</label>
+        <input type="number" name="hari" min="1" max="99" required>
+    </div>
+    <br>
+    <button type="button" id="button">Total Biaya Sewa</button>
+    </form>
+    <p id="totalBiayaResult"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
